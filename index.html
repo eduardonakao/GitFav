@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitFav</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div id="App">
+    <div id="app">
         <header>
             <h1>GitFav</h1>
             <dir class="search">
-                <label for="input-search">Digite o Github username que quer favoritar</label>
+                <label class="sr-only" for="input-search">Digite o Github username que quer favoritar</label>
                 <input type="text" id="input-search" placeholder="Usuário do Github">
                 <button>&star; Favoritar</button>
             </dir>
