@@ -1,3 +1,5 @@
+import { GithubUser } from "./GithubUser";
+
 export class Favorites {
     constructor(root) {
         this.root = document.querySelector(root);
@@ -6,6 +8,10 @@ export class Favorites {
 
     load() {
         this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || [];
+    }
+
+    save() {
+        localStorage.setItem('@github-favorites:', JSON.stringify(this.entries))
     }
 
     delete(user) {
@@ -25,6 +31,14 @@ export class FavoritesView extends Favorites {
 
             this.update()
             this.onAdd()
+        }
+
+        onAdd() {
+            const addButton = this.root.querySelector('.search button')
+            addButton.addEventListener('click', () => {
+                const { value } = this.root.querySelector('search input')
+                this.add(value)
+            })
         }
 
         update() {
