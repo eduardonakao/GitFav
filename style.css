@@ -105,6 +105,27 @@ table * {
     font-weight: 700;
 }
 
+.noFav {
+    height: 500px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.noFav p {
+    color: #4E5455;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 6rem;
+}
+
+.hidden {
+    display: none;
+}
+
 table th {
     background-color: var(--table-color);
     padding: 1.6rem;
