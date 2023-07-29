@@ -68,6 +68,12 @@ export class FavoritesView extends Favorites {
 
         update() {
             this.removeAllTr()
+            
+            if(this.entries.length === 0) {
+                this.root.querySelector('.noFav').style.display = 'flex'
+            } else {
+                this.root.querySelector('.noFav').style.display = 'none'
+            }
 
             this.entries.forEach(user => {
                 const row = this.createRow()

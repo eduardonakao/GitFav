@@ -11,7 +11,7 @@
     --text-color: #E1E1E6;
 
     --primary-color: rgba(6, 22, 27, .5);
-    --secondary-color: #4A808C;
+    --secondary-color: #06181C;
 
     --table-color: #092D38;
     --button-color: #065E7C;
@@ -120,10 +120,6 @@ table * {
     font-size: 4rem;
     font-weight: 700;
     margin-left: 6rem;
-}
-
-.hidden {
-    display: none;
 }
 
 table th {
